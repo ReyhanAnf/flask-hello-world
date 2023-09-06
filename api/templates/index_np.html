@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Predict</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style_np.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="tailwind.min.css" rel="stylesheet">
+  <link href="../fa/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+  
+  <header class="text-gray-600 body-font bg-gray-200">
+    <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center ">
+      <a class="flex title-font items-center text-gray-900 mb-8 md:mb-0">
+        
+        <span class="ml-auto text-xl">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit; font-size: 25px;font-weight: 400">Prediksi Berita Hoax</font>
+          </font>
+        </span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Disc</font>
+          </font>
+        </a>
+        <a class="mr-5 hover:text-gray-900">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Kebijakan Privasi</font>
+          </font>
+        </a>
+        <a class="mr-5 hover:text-gray-900">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Syarat&Ketentuan</font>
+          </font>
+        </a>
+      </nav>
+      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-0 md:mt-0">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Profil Pembuat</font>
+        </font>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+  
+  
+  <section class="text-gray-600 body-font relative">
+    <div class="container px-2 py-10 mx-auto">
+      <div class="flex flex-col text-center w-full mb-0">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Yuk Mulai Prediksi</font>
+          </font>
+        </h1>
+        <p class="lg:w-5/6 mx-auto leading-relaxed text-base alert alert-danger ">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Kamu bisa memasukan salah satu dari teks atau url berita tersebut!</font>
+          </font>
+        </p>
+      </div>
+      <form class="form-horizontal" action = "/result-news-predict/" method="post">
+      <div class="lg:w-4/5 md:w-4/5 mx-auto">
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 w-full">
+            <div class="relative">
+              <label for="url" class="leading-7 text-sm text-gray-600">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">URL/Link</font>
+                </font>
+              </label>
+              <input type="text" id="url" name="url" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="https://...">
+            </div>
+          </div>
+          <hr/>
+          <span style="margin: 0 auto">Atau</span>
+          <hr />
+          <div class="p-2 w-full">
+            <div class="relative">
+              <label for="text" class="leading-7 text-sm text-gray-600">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Teks</font>
+                </font>
+              </label>
+              <input type="text" id="tt" name="ttl" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="Judul..">
+              <textarea id="text" name="text" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" placeholder="Kontennya.."></textarea>
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Prediksi</font>
+              </font>
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</form>
+
+  <section class="text-gray-600 body-font relative">
+    <div class="container uu mx-auto">
+      <div class="flex uu flex-col text-center w-full">
+            <span class="inline-flex">
+              <a class="ml-5 text-white-300" href="#popup1">
+                <button class="don">
+                 <i class="fa fa-question-circle-o" aria-hidden="true"></i> Cara Kerja?
+                </button>
+              </a>
+              
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Cara Kerja Singkat</h2>
+		<a class="close" href="#">&times;</a>
+		<img src="../media/carakerjaa.svg" alt="cara kerja">
+		<div class="content">
+		  Pertama, model machine learning Logistik Regresi ini dilatih dengan dataset kumpulan berita hoax dan benar yang telah divektorisasi. Setelah melalui pelatihan , model ini dites dan diterapkan algoritma sampai skor akurasinya mendekati 100%. <br/> <br/>&nbsp;&nbsp;Pengguna memasukan input, lalu bahasa disesuaikan dengan ketentuan model yang dibuat. Setelah siap, maka input divektorisasi dan masuk tahap prediksi. Hasil prediksi bisa ditampilkan kelayar.  
+		</div>
+	</div>
+</div>
+              <a class="ml-5 text-white-300" href="https://trakteer.id/reyhananf/tip">
+                <button class="don">
+                 <i class="fa fa-coffee" aria-hidden="true"></i> Traktir
+                </button>
+              </a>
+            
+              <a class="ml-5 text-white-300" href="#popup2">
+                <button class="don">
+                  <i class="fa fa-wrench" aria-hidden="true"></i> Dibuat pake?
+                </button>
+              </a>
+<div id="popup2" class="overlay">
+  <div class="popup">
+    <h2>Dibuat pake apa?</h2>
+    <a class="close" href="#">&times;</a>
+    <img src="../media/pakee.svg" alt="">
+  </div>
+</div>              
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  <footer class="text-black-600 body-font bg-gray-200">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <span class="ml-3 text-xl">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Erentech</font>
+          </font>
+        </span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">© 2021 Erentech — </font>
+        </font>
+        <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">@reyhan.anf_ </font><br/>
+            <font style="vertical-align: inherit; text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reyhan Andrea Firdaus </font>
+          </font>
+        </a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500" href="https://facebook.com/reyhan.kenzem.9/">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" href="https://twitter.com/Reyhan73642393">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" href="https://www.instagram.com/reyhan.anf_/">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" href="https://github.com/ReyhanAnf">
+          <div class="fa fa-github"></div>
+        </a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_np.css">
+    
+    <script src="jquery.min.js"></script>
+   
+    <script src="bootstrap.min.js"></script>
+    
+    <link href="tailwind.min.css" rel="stylesheet">
+    <link href="../fa/css/font-awesome.min.css" rel="stylesheet">
+    
+   <script type="text/javascript"src="Chart.bundle.js"></script>
+    
+    <title> Predict News</title>
+    
+  </head>
+  
+  <body>
+    
+  <header class="text-gray-600 body-font bg-gray-200">
+    <div class="container mx-auto flex flex-wrap p-1 flex-col md:flex-row items-center ">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        
+        <span class="ml-3 text-xl">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Prediksi Berita Hoax</font>
+          </font>
+        </span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Disc</font>
+          </font>
+        </a>
+        <a class="mr-5 hover:text-gray-900">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Kebijakan Privasi</font>
+          </font>
+        </a>
+        <a class="mr-5 hover:text-gray-900">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Syarat&Ketentuan</font>
+          </font>
+        </a>
+      </nav>
+      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Profil Pembuat</font>
+        </font>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+  
+      <div class="container pt-3">
+       
+      
+        <div id="content">{% block content %} {% endblock %}</div>
+      
+   
+        <div id="err">{% block err %}{% endblock %}</div>
+    
+      
+          {% block footer %}
+          {% endblock %}
+      </div>
+    
+    <div class="trt alert" style="margin: 10px auto"><div class="p-2 w-full">
+      <button class="flex mx-auto text-secondary bg-light border-1 py-2 px-8 focus:outline-none hover:bg-primary-500 rounded text-lg" onclick="rate()">
+        <font style="vertical-align: inherit;"><div class="wak">7</div>
+          <font style="vertical-align: inherit;"><i class="fa fa-star"></i> Beri Nilai</font>
+        </font>
+      </button>
+    </div>
+    <a class="ml-5 text-white-300 ltr" href="https://trakteer.id/reyhananf/tip">
+                <button class="don">
+                 <i class="fa fa-coffee" aria-hidden="true"></i> Traktir
+                </button>
+              </a>
+              </div>
+  
+    
+    
+   <div class="rt"></div>
+   
+   <script src="main_np.js"></script>
+   
+   
+  
+  <footer class="text-black-600 body-font bg-gray-200">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <span class="ml-3 text-xl">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Erentech</font>
+          </font>
+        </span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">© 2021 Erentech — </font>
+        </font>
+        <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">@reyhan.anf_ </font><br />
+            <font style="vertical-align: inherit; text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reyhan Andrea Firdaus </font>
+          </font>
+        </a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500" href="https://facebook.com/reyhan.kenzem.9/">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" href="https://twitter.com/Reyhan73642393">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" href="https://www.instagram.com/reyhan.anf_/">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" href="https://github.com/ReyhanAnf">
+          <div class="fa fa-github"></div>
+        </a>
+      </span>
+    </div>
+  </footer>
+  
+  
+
+  </body>
+</html>
